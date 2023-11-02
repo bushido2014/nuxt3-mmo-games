@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-rubik font-normal antialiased bg-gray-50 dark:bg-slate-800 dark:text-white;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+.button-link {
+  @apply focus:outline-none disabled:cursor-not-allowed 
+  disabled:opacity-75 flex-shrink-0 font-medium 
+  rounded-md text-sm gap-x-1.5 px-2.5 py-1.5 
+  shadow-sm text-white dark:text-gray-900 
+  bg-primary-500 hover:bg-primary-600 
+  disabled:bg-primary-500 dark:bg-primary-400 
+  dark:hover:bg-primary-500 dark:disabled:bg-primary-400 
+  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500 dark:focus-visible:outline-primary-400 inline-flex items-center;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  @apply text-slate-600 dark:text-white;
+}
+p {
+  @apply dark:text-white;
+}
+.logo-game {
+  @apply text-sky-500  dark:text-white;
+}
+.page-title {
+  @apply text-2xl md:text-3xl font-bold;
+}
+
+.platformpc .swiper-wrapper,
+.browser .swiper-wrapper {
+  @apply pt-16;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  @apply !w-12 !h-12 
+  rounded-full bg-sky-500
+  flex justify-center 
+  items-center
+  transition-colors 
+  delay-200 hover:bg-sky-700 !top-6;
+}
+.swiper-button-next {
+  @apply !left-16;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  @apply !text-2xl text-white;
+}
+.slide-img {
+  @apply w-full aspect-[2/3] 
+  rounded-md object-cover 
+  object-center scale-[1.01]
+   hover:scale-105 
+   duration-300 origin-bottom 
+   select-none;
+}
+.slide-wrapper {
+  @apply overflow-hidden
+  rounded-md duration-500
+  border-4 border-transparent
+  hover:border-sky-500
+  relative  hover:shadow-md
+  cursor-pointer;
+}
+.slide-bg {
+  @apply absolute
+  bottom-0
+  inset-x-0
+  flex flex-col
+  justify-end
+  px-2
+  sm:px-4
+  py-8
+  bg-gradient-to-b
+  from-transparent
+  to-black;
+}
+
+.slide-title {
+  @apply font-bold
+  leading-5
+  text-lg 
+  text-white 
+  duration-200
+  line-clamp-2;
+}
+
+.pagination-container {
+  @apply flex justify-center gap-2;
+}
+.pagination-container button {
+  @apply border px-3 py-2 rounded-md transition-all duration-300 hover:bg-sky-500 hover:text-white;
+}
+.pagination-container .active {
+  @apply bg-sky-500 text-white;
+}
+.modal-article {
+  @apply p-2;
+}
+.modal-article p:nth-child(1) img {
+  @apply mb-3;
+}
+.game-url {
+  @apply cursor-pointer
+  rounded-md
+  px-10
+  py-4
+  overflow-hidden
+  bg-transparent
+  hover:border-transparent
+  border-2 border-sky-500
+  hover:bg-sky-500
+  text-sky-500
+  hover:text-white
+  hover:ring-2
+  hover:ring-offset-2
+  hover:ring-sky-400
+  duration-300;
+}
+.modal-article p:nth-child(2) a {
+  @apply font-bold text-lg underline text-red-500;
+}
+.modal-article iframe {
+  @apply w-full;
+}
