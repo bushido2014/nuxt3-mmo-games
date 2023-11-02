@@ -14,10 +14,4 @@ This project is a simple web application developed with Nuxt 3 that retrieves da
 2. Run `npm install` to install project dependencies.
 3. Run `npm run dev` to start the Nuxt development server.
 
-## Contributions
 
-Contributions are welcome! If you'd like to add new features or fix issues, please submit pull requests. Please refer to the [Contributing Guide](CONTRIBUTING.md) for more information on how you can contribute to this project.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) for more details.
