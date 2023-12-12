@@ -103,7 +103,7 @@ const isDark = computed({
   },
 });
 </script>
-<style setup>
+<style scoped>
 .header {
   @apply py-4 relative border-b;
 }
