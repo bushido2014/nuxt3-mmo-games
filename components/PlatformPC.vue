@@ -11,7 +11,7 @@
       :space-between="20"
       :navigation="true"
       :autoplay="{
-        delay: 4000,
+        delay: 4100,
         disableOnInteraction: false,
       }"
       :modules="[SwiperGrid, SwiperNavigation]"
