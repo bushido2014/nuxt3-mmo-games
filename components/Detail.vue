@@ -30,7 +30,7 @@
           </div>
 
           <div>
-            <p>Developer:</p>
+            <p>Developer</p>
             <span>{{ game.developer }}</span>
           </div>
           <div>
@@ -46,7 +46,7 @@
             <span>{{ game.genre }}</span>
           </div>
           <div>
-            <p>Platform:</p>
+            <p>Platform</p>
 
             <template v-if="game.platform === 'Windows'">
               <Icon name="fa:windows" /> - Windows
