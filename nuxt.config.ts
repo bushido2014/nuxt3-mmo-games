@@ -1,7 +1,7 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
-  modules: ['nuxt-icon', '@nuxt/ui', 'nuxt-swiper'],
+  modules: ['nuxt-icon', '@nuxt/ui', 'nuxt-swiper','nuxt-gtag'],
 
   postcss: {
     plugins: {
@@ -25,5 +25,8 @@ export default defineNuxtConfig({
       RapidAPIKey: process.env.RapidAPIKey,
       RapidAPIHost: process.env.RapidAPIHost,
     },
+  },
+  gtag: {
+    id: 'G-37YYMBREGP'
   },
 });
