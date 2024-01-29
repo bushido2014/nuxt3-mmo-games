@@ -21,9 +21,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      baseURL: process.env.BASE_URL,
-      RapidAPIKey: process.env.RapidAPIKey,
-      RapidAPIHost: process.env.RapidAPIHost,
+      baseURL: process.env.BASE_URL
     },
   },
   gtag: {

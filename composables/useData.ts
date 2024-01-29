@@ -2,8 +2,8 @@ export default function useData(endpoint: string) {
   const config = useRuntimeConfig();
   const { data } = useFetch(`${config.public.baseURL}/${endpoint}`, {
     headers: {
-      'X-RapidAPI-Key': config.public.RapidAPIKey,
-      'X-RapidAPI-Host': config.public.RapidAPIHost,
+      'X-RapidAPI-Key': '8c225fdb62mshce8bc529a49bbadp1d87c7jsn82460f41d425',
+      'X-RapidAPI-Host': 'mmo-games.p.rapidapi.com',
     },
   });
 
