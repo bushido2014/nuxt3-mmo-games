@@ -19,11 +19,6 @@ export default defineNuxtConfig({
   experimental: {
     viewTransition: true,
   },
-  runtimeConfig: {
-    public: {
-      baseURL: process.env.BASE_URL
-    },
-  },
   gtag: {
     id: 'G-37YYMBREGP'
   },
