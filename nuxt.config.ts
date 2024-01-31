@@ -1,7 +1,7 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
-  modules: ['nuxt-icon', '@nuxt/ui', 'nuxt-swiper', 'nuxt-gtag'],
+  modules: ['nuxt-icon', '@nuxt/ui', 'nuxt-swiper'],
 
   postcss: {
     plugins: {
@@ -19,7 +19,11 @@ export default defineNuxtConfig({
   experimental: {
     viewTransition: true,
   },
-  gtag: {
-    id: 'G-37YYMBREGP'
+  runtimeConfig: {
+    public: {
+      gtagId: 'G-37YYMBREGP',
+    }
   },
+
+  
 });
