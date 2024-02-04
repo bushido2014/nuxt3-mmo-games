@@ -32,7 +32,7 @@
 </template>
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue';
-import { Igame } from '~/types';
+import type { Igame } from '~/types';
 const currentPage = ref(1);
 const itemsPerPage = 24;
 const searchQuery = ref('');

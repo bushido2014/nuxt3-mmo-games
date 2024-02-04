@@ -20,7 +20,7 @@
           <span class="game-details__status">{{ game.status }}</span>
         </div>
 
-        <div class="game-details__text" v-html="game.description"></div>
+        <div class="game-details__text" v-if="game && game.description"></div>
         <h3>Additional Information</h3>
         <hr class="py-4" />
         <div class="game-details__list">

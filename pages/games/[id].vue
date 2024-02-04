@@ -1,5 +1,5 @@
 <template>
-  <div class="container py-5">
+  <div class="container py-5" v-if="game">
     <Head>
       <Title> {{ game.title }} | Game Detail </Title>
       <Meta
@@ -13,7 +13,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import { Igame } from '~/types';
+import type { Igame } from '~/types';
 
 const route = useRoute();
 

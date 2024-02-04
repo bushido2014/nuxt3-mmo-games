@@ -33,7 +33,7 @@
   </NuxtLink>
 </template>
 <script setup lang="ts">
-import { Igame } from '~/types';
+import type { Igame } from '~/types';
 
 defineProps<{
   game: Igame;

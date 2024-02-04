@@ -75,6 +75,6 @@
 </template>
 <script lang="ts" setup>
 import { ref } from 'vue';
-import { Igame } from '~/types';
+import type { Igame } from '~/types';
 const { data: pc } = useplPC<Igame[]>();
 </script>
