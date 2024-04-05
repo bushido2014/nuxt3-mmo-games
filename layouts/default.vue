@@ -1,6 +1,8 @@
 <template>
+  
   <Header />
   <slot />
+  
   <div
     :class="`fixed z-50 inset-0 bg-white flex items-center justify-center duration-300 ${
       isLoading
@@ -67,6 +69,7 @@
     />
   </button>
   <Footer />
+  
 </template>
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
