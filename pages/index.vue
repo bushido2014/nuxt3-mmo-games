@@ -1,8 +1,10 @@
 <template>
   <div class="container py-5">
+    
     <div class="pb-4">
       <h2 class="page-title">Popular Games</h2>
     </div>
+    
     <Popular />
     <PlatformPC />
     <PlatformBrowser />
